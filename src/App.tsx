@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import {
   Routes,
@@ -7,6 +7,10 @@ import {
 import {Home, Project, Contact, AppLayout} from './layouts';
 
 function App() {
+
+  useEffect(() => {
+    document.title = "Jason's Personal Website"
+  })
   return (
     <div className="App">
       <Routes>
